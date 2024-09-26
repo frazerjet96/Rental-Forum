@@ -1,38 +1,94 @@
-.App {
+/* General Form Container Styles */
+.form-container {
+  background-color: #f8f7eb;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  max-width: 400px;
+  margin: 2rem auto;
   text-align: center;
+  font-family: Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Headings */
+.form-container h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-container h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.form-container p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 1.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+/* Input Styles */
+.form-container input,
+.form-container select,
+.form-container textarea {
+  width: calc(100% - 20px);
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  outline: none;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-container select {
+  padding-right: 1rem;
+}
+
+/* Button Styles */
+.type-selection button {
+  background-color: #d7c7a2;
+  border: none;
+  border-radius: 25px;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.type-selection .active {
+  background-color: #c2a874;
+  color: #fff;
+}
+
+.type-selection button:hover {
+  background-color: #c2a874;
+}
+
+/* Submit Button */
+.form-container button[type="submit"] {
+  background-color: #e1f982;
+  border: none;
+  border-radius: 25px;
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-container button[type="submit"]:hover {
+  background-color: #cdd966;
+}
+
+/* Textarea */
+.form-container textarea {
+  height: 100px;
+  resize: none;
 }
